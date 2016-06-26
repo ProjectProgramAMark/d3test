@@ -45,7 +45,7 @@
 
           // FTP not working, try and find a fix for this (lol) later
           d3.select('#thirddomain').on("click", function() {
-            d3.text("https://ftp.ncbi.nlm.nih.gov/genomes/ASSEMBLY_REPORTS/All/GCF_000002765.3.assembly.txt")
+            d3.text("http://localhost:8005/genomes/ASSEMBLY_REPORTS/All/GCF_000002765.3.assembly.txt")
             .get(function(err, data) {
               if(err) console.log(err);
               d3.select('#thirdresult').html(data);
